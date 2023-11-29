@@ -5,5 +5,5 @@
 @endsection
 
 @section('seccion')
-  <h1>Foto de codigo: {{ $valor }} </h1>
+  <h1>Foto de codigo: {{ $otro }} -- {{ $valor }} </h1>
 @endsection
