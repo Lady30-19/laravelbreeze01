@@ -7,7 +7,7 @@
 @section('seccion')
     <h3> Lista </h3>
     <table class="table">
-        <thead class="table-dark">
+        <thead class="table-secondary">
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Código</th>
@@ -20,8 +20,11 @@
             <tr>
                 <th scope="row">{{ $item->id}}</th>
                 <td>{{ $item->codEst }}</td>
-                <td>{{ $item->apeEst }}, {{ $item->nomEst }}</td>
-                <td>@mdor</td>
+                <td>
+                    <a href="{{ route('Estudiante.xDetalle', $item->id) }}">
+                        {{ $item->apeEst }}, {{ $item->nomEst }}
+                    </a>
+                <td>A-----X</td>
             </tr>
             @endforeach
         </tbody>
